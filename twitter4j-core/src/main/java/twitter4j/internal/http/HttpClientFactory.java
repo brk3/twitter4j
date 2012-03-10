@@ -45,7 +45,7 @@ public final class HttpClientFactory {
         }
         if (null == clazz) {
             try {
-                clazz = Class.forName("twitter4j.internal.http.HttpClientImpl");
+                clazz = Class.forName("twitter4j.internal.http.ApacheHttpClientImpl");
             } catch (ClassNotFoundException cnfe) {
                 throw new AssertionError(cnfe);
             }
